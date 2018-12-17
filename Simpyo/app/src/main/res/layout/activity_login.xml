@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f8"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/guideLine"
+            android:layout_above="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/guideLine"
+            android:layout_marginBottom="3.7dp"
+            android:layout_marginLeft="24.7dp"
+            android:text="쉼표"
+            android:textColor="#5480e8"
+            android:textSize="33.3dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_above="@+id/guideLine"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6.5dp"
+            android:layout_toRightOf="@+id/title1"
+            android:text="비흡연자와 흡연자의 권리 공존"
+            android:textColor="#5480e8"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/icon_login"
+            android:layout_width="82.7dp"
+            android:layout_height="82.7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/icon_login" />
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="52.7dp"
+            android:layout_above="@+id/passwordEdit"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="24.7dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="10.7dp"
+            android:background="@drawable/edit_border2"
+            android:gravity="center|left"
+            android:hint="E-mail"
+            android:paddingLeft="18dp"
+            android:textColor="#000000"
+            android:textColorHint="#6e6e6e"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="52.7dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24.7dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/edit_border2"
+            android:gravity="center|left"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:textColor="#000000"
+            android:textColorHint="#6e6e6e"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/findPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="24.7dp"
+            android:layout_below="@+id/passwordEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11.7dp"
+            android:gravity="center"
+            android:text="비밀번호 찾기"
+            android:textColor="#b6b9c6"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52.7dp"
+            android:layout_below="@+id/findPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="23.3dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="14.3dp"
+            android:background="@drawable/button_border_signin"
+            android:gravity="center"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52.7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25.7dp"
+            android:layout_marginLeft="23.3dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_border_signup"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textAllCaps="false"
+            android:textColor="#5480e8"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportListActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#5583e6">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="신고목록"
+            android:textColor="#ffffff"
+            android:textSize="17.5dp" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="#5583e6"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        app:tabTextColor="#ffffff"
+        app:tabIndicatorColor="#ffffff"
+        app:tabTextAppearance="@style/CustomTabText"
+        app:tabSelectedTextColor="#ffffff"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/action_layout"
+        android:background="#5583e6"
+        app:tabIndicatorHeight="2dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

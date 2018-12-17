@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="simpyo.simpyo">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:noHistory="true" />
+        <activity
+            android:name=".Activity.LoadingActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".GoogleMap.MapActivity" />
+        <activity android:name=".Activity.ReportListActivity" />
+        <activity android:name=".Activity.ReportMyListActivity" />
+        <activity
+            android:name=".Activity.ReportActivity" />
+        <activity
+            android:name=".Activity.ReportDoneActivity"/>
+        <activity android:name=".Activity.SeeReportActivity" />
+        <activity android:name=".Activity.SetReportActivity" />
+        <activity android:name=".Activity.TutorialActivity" android:noHistory="true"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/activity_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_navigation">
+
+        <RelativeLayout
+            android:id="@+id/menu_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp"
+            android:background="#f4f5f8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_marginTop="15.7dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/myReportMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginTop="17.8dp"
+                    android:gravity="center|left"
+                    android:text="My 신고 내역"
+                    android:textColor="#444751"
+                    android:textSize="14.5dp" />
+
+                <TextView
+                    android:id="@+id/firstLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@+id/myReportMenu"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginRight="23.5dp"
+                    android:layout_marginTop="13.8dp"
+                    android:background="#f0f2f8" />
+
+                <TextView
+                    android:id="@+id/myInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstLine"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginTop="13.8dp"
+                    android:gravity="center|left"
+                    android:text="내 정보"
+                    android:textColor="#444751"
+                    android:textSize="14.5dp" />
+
+                <TextView
+                    android:id="@+id/secondLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@+id/myInfo"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginRight="23.5dp"
+                    android:layout_marginTop="13.8dp"
+                    android:background="#f0f2f8" />
+
+                <TextView
+                    android:id="@+id/helpMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secondLine"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginTop="13.8dp"
+                    android:gravity="center|left"
+                    android:text="도움말"
+                    android:textColor="#444751"
+                    android:textSize="14.5dp" />
+
+                <TextView
+                    android:id="@+id/thirdLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_below="@+id/helpMenu"
+                    android:layout_marginLeft="20.2dp"
+                    android:layout_marginRight="23.5dp"
+                    android:layout_marginTop="13.8dp"
+                    android:background="#f0f2f8" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/logoutMenu"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:paddingLeft="20dp"
+                android:text="로그아웃"
+                android:textColor="#868b97"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

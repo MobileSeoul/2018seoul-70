@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#5583e6">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="#5583e6"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_layout"
+        android:background="#f4f5f8">
+
+        <RelativeLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80.6dp"
+            android:layout_marginTop="17.3dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginTop="16.2dp"
+                android:text="서강역"
+                android:textColor="#3c404a"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place1"
+                android:layout_below="@+id/place1"
+                android:layout_marginTop="7dp"
+                android:text="서울특별시 대흥동"
+                android:textColor="#868b97"
+                android:textSize="13.3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reportImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="153.5dp"
+            android:layout_below="@+id/addressLayout"
+            android:layout_marginTop="9.6dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/image_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.4dp"
+                android:layout_marginTop="16.2dp"
+                android:text="증거사진"
+                android:textColor="#3c404a"
+                android:textSize="13.3dp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/image_title1"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/image_title1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image_title1"
+                android:layout_marginRight="16.3dp"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reportLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reportImageLayout"
+            android:layout_marginBottom="13.1dp"
+            android:layout_marginTop="9.6dp"
+            android:background="#ffffff"
+            android:minHeight="96.3dp">
+
+            <TextView
+                android:id="@+id/reportView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="17.7dp"
+                android:background="#ffffffff"
+                android:text="사진 속 남성 1명과 여성 1명이 금연구역에서 흡연하였습니다. 빠른 출동 부탁드립니다."
+                android:textColor="#868b97"
+                android:textSize="13.3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/doneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="114.2dp"
+            android:layout_below="@+id/reportLayout"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/doneTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.4dp"
+                android:layout_marginTop="12.1dp"
+                android:text="검거상태"
+                android:textColor="#3c404a" />
+
+            <ImageView
+                android:id="@+id/doneView"
+                android:layout_width="132.7dp"
+                android:layout_height="49dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:src="@drawable/in_progress" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

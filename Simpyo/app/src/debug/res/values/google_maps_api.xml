@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=E0:61:88:A0:98:75:70:89:31:16:46:BD:89:09:2A:9A:8D:8A:EE:0A%3Bsimpyo.simpyo.Activity
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    E0:61:88:A0:98:75:70:89:31:16:46:BD:89:09:2A:9A:8D:8A:EE:0A
+
+    SHA-1 certificate fingerprint:
+    E0:61:88:A0:98:75:70:89:31:16:46:BD:89:09:2A:9A:8D:8A:EE:0A
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDpMG7VSyiJb5LbjOhDvleKGn2pF1RN7sU</string>
+</resources>

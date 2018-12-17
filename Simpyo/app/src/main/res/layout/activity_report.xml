@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ReportActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#5583e6">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="흡연신고"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:background="#5583e6"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_layout"
+        android:background="#f4f5f8">
+
+        <RelativeLayout
+            android:id="@+id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80.6dp"
+            android:layout_marginTop="17.3dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginTop="16.2dp"
+                android:text="서강역"
+                android:textColor="#3c404a"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/place1"
+                android:layout_below="@+id/place1"
+                android:layout_marginTop="7dp"
+                android:text="서울특별시 대흥동"
+                android:textColor="#868b97"
+                android:textSize="13.3dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reportImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="153.5dp"
+            android:layout_below="@+id/addressLayout"
+            android:layout_marginTop="9.6dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/image_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14.4dp"
+                android:layout_marginTop="16.2dp"
+                android:text="증거사진 첨부"
+                android:textColor="#3c404a"
+                android:textSize="13.3dp" />
+
+            <TextView
+                android:id="@+id/image_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/image_title1"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/image_title1"
+                android:text="(선택)"
+                android:textColor="#868b97"
+                android:textSize="13.3dp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/image_title1"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_below="@+id/image_title1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image_title1"
+                android:layout_marginRight="16.3dp"
+                android:layout_marginTop="14.2dp"
+                android:background="@drawable/btn_add_picture" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/doneBtn"
+            android:layout_below="@+id/reportImageLayout"
+            android:layout_marginBottom="27dp"
+            android:layout_marginTop="9.6dp"
+            android:background="#ffffff">
+
+            <EditText
+                android:hint="신고 내용을 입력하세요 (선택)"
+                android:id="@+id/reportEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.3dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="17.7dp"
+                android:background="#ffffffff"
+                android:textColor="#868b97"
+                android:textSize="13.3dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/doneBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60.4dp"
+            android:layout_alignParentBottom="true"
+            android:background="#5480e8">
+
+            <TextView
+                android:id="@+id/doneLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="완료"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

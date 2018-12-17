@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleMap.MapActivity">
+
+    <RelativeLayout
+        android:id="@+id/action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#5583e6">
+
+        <ImageButton
+            android:id="@+id/drawerBtn"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="#5583e6"
+            android:scaleType="fitCenter"
+            android:src="@drawable/menu" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_layout">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/no_smoking_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_above="@+id/firstLine"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:background="#ffffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/view_no_smoking" />
+
+            <TextView
+                android:id="@+id/firstLine"
+                android:layout_width="45dp"
+                android:layout_height="0.7dp"
+                android:layout_above="@+id/smoking_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="13dp"
+                android:background="#DFE3EC" />
+
+            <ImageButton
+                android:id="@+id/smoking_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@+id/centerLine"
+                android:layout_marginRight="13dp"
+                android:background="#ffffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/view_smoking" />
+
+            <TextView
+                android:id="@+id/centerLine"
+                android:layout_marginBottom="22.5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+            <TextView
+                android:id="@+id/secondLine"
+                android:layout_width="45dp"
+                android:layout_height="0.7dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/smoking_btn"
+                android:layout_marginRight="13dp"
+                android:background="#DFE3EC" />
+
+            <ImageButton
+                android:id="@+id/view_all_btn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/secondLine"
+                android:layout_marginRight="13dp"
+                android:background="#ffffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/view_all" />
+
+            <ImageView
+                android:id="@+id/smoking_check"
+                android:layout_width="131.3dp"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/check" />
+
+            <RelativeLayout
+                android:id="@+id/smoking_check_done_view"
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="15.3dp"
+                android:background="@drawable/smoking_check_done_view"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#f4f5f8"
+                    android:gravity="center"
+                    android:text="흡연 스팟"
+                    android:textColor="#444751"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:layout_toRightOf="@+id/title1"
+                    android:background="#f4f5f8"
+                    android:gravity="center"
+                    android:text=" 체크"
+                    android:textColor="#444751"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/explain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:text="금연구역, 흡연시설을 제외한"
+                    android:textColor="#868b97"
+                    android:textSize="13.3dp" />
+
+                <TextView
+                    android:id="@+id/explain2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/explain1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6.7dp"
+                    android:text="일반 길거리의 흡연 잦은 곳"
+                    android:textColor="#444751"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/smoking_check_done"
+                    android:layout_width="131.3dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/check_done" />
+
+            </RelativeLayout>
+
+            <!-- 간편 신고 버튼-->
+            <RelativeLayout
+                android:id="@+id/reportLayout"
+                android:layout_width="match_parent"
+                android:layout_height="189dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/reportTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#F4F5F8">
+
+                    <TextView
+                        android:id="@+id/zone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12.7dp"
+                        android:text="금연존"
+                        android:textColor="#5480e8"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="79.6dp"
+                    android:layout_below="@+id/reportTop">
+
+                    <TextView
+                        android:id="@+id/place1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12.7dp"
+                        android:layout_marginTop="13.3dp"
+                        android:text="서강역"
+                        android:textColor="#6a707e"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/place2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/place1"
+                        android:layout_marginLeft="12.7dp"
+                        android:layout_marginTop="6dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="서울특별시 대흥동"
+                        android:textColor="#868b97" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reportBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60.4dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#5480e8">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/report1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="금연구역 흡연 "
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/report2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/report1"
+                            android:text="간편신고"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

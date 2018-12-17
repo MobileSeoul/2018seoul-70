@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5480e8"
+    tools:context=".Activity.ReportDoneActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34.1dp"
+        android:src="@drawable/report_done" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/centerLine"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="신고 완료"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/centerLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="2dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/explainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centerLine"
+        android:gravity="center"
+        android:text="가까운 관리자에게 신고내역이\n전달되었습니다 !"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:background="@drawable/button_border_reportdone"
+        android:id="@+id/seeListBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/explainView"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="65.7dp"
+        android:gravity="center"
+        android:text="신고내역 확인"
+        android:textColor="#ffffff"
+        android:textSize="17.5dp" />
+
+    <TextView
+        android:id="@+id/homeBtn"
+        android:background="@drawable/button_border_reportdone"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/seeListBtn"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="홈으로"
+        android:textColor="#ffffff"
+        android:textSize="17.5dp" />
+
+</RelativeLayout>

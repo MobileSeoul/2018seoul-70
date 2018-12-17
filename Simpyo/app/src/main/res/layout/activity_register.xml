@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f8"
+    tools:context=".Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/icon_login"
+        android:layout_width="82.7dp"
+        android:layout_height="82.7dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/icon_login" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameEdit"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="34.3dp"
+        android:gravity="center|left"
+        android:text="회원가입"
+        android:textColor="#5583e6"
+        android:textSize="26.7dp" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/firstLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="42.7dp"
+        android:layout_marginRight="42.7dp"
+        android:background="@null"
+        android:gravity="center|left"
+        android:hint="이름"
+        android:textColor="#000000"
+        android:textColorHint="#6e6e6e"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_above="@+id/emailEdit"
+        android:layout_marginBottom="9.3dp"
+        android:layout_marginLeft="34.3dp"
+        android:layout_marginRight="34.3dp"
+        android:background="#dfe3ec" />
+
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/secondLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="42.7dp"
+        android:layout_marginRight="42.7dp"
+        android:background="@null"
+        android:gravity="center|left"
+        android:hint="이메일"
+        android:textColor="#000000"
+        android:textColorHint="#6e6e6e"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_above="@+id/passwordEdit"
+        android:layout_marginBottom="9.3dp"
+        android:layout_marginLeft="34.3dp"
+        android:layout_marginRight="34.3dp"
+        android:background="#dfe3ec" />
+
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="42.7dp"
+        android:layout_marginRight="42.7dp"
+        android:background="@null"
+        android:gravity="center|left"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#6e6e6e"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/fourthLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginLeft="34.3dp"
+        android:layout_marginRight="34.3dp"
+        android:layout_marginTop="9dp"
+        android:background="#dfe3ec" />
+
+    <EditText
+        android:id="@+id/birthdayEdit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fourthLine"
+        android:layout_marginLeft="42.7dp"
+        android:layout_marginRight="42.7dp"
+        android:layout_marginTop="9.3dp"
+        android:background="@null"
+        android:gravity="center|left"
+        android:hint="생년월일 (19990101)"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#6e6e6e"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/fifthLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_below="@+id/birthdayEdit"
+        android:layout_marginLeft="34.3dp"
+        android:layout_marginRight="34.3dp"
+        android:layout_marginTop="9dp"
+        android:background="#dfe3ec" />
+
+    <TextView
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52.7dp"
+        android:layout_below="@+id/birthdayEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="25.3dp"
+        android:background="@drawable/button_border_signin"
+        android:gravity="center"
+        android:text="완료"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="52.7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25.7dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="21.3dp"
+        android:background="@drawable/button_border_signup"
+        android:gravity="center"
+        android:text="로그인"
+        android:textAllCaps="false"
+        android:textColor="#5480e8" />
+
+
+</RelativeLayout>

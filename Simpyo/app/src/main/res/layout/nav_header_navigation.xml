@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="#5480e8"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18.3dp"
+        android:layout_marginTop="11.4dp"
+        android:src="@drawable/icon_white" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon1"
+        android:layout_marginLeft="10.7dp"
+        android:text="안녕하세요 !"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="10.7dp"
+        android:layout_marginTop="6dp"
+        android:text="admin"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameView"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/nameView"
+        android:text="님"
+        android:textColor="#ffffff"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/is_Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nameView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="[ 관리자 계정 ]"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
